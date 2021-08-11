@@ -1,0 +1,323 @@
+/* ================================================ INICIO DA ESTILIZAÇÃO DA LANDING PAGE */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+a:hover {
+  color: #999;
+}
+
+ul li {
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* ======================================================= */
+
+/* ======================== HEADER ======================== */
+header {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #212343;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  width: 70px;
+}
+header .menubar {
+  display: flex;
+  align-items: center;
+}
+header .menubar ul {
+  display: flex;
+}
+header .menubar ul li {
+  padding: 5px 20px;
+  font-size: 12px;
+  /* margin: 0 5px; */
+  border-radius: 5px;
+  /* background-color: red; */
+}
+header .menubar .buttons {
+  display: flex;
+}
+header .menubar .button {
+  text-align: center;
+  font-size: 11px;
+  max-width: 150px;
+  margin: 0 5px;
+  padding: 12px 10px;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+header .menubar .button:nth-of-type(1) {
+  border: 1px solid yellow;
+}
+header .menubar .button:nth-of-type(1) a {
+  color: yellow;
+}
+header .menubar .button:nth-of-type(1):hover {
+  background-color: yellow;
+}
+header .menubar .button:nth-of-type(1):hover a {
+  color: #16172b;
+}
+
+header .menubar .button:nth-of-type(2) {
+  border: 1px solid #fff;
+  background-color: #212343;
+}
+header .menubar .button:nth-of-type(2) a {
+  color: #fff;
+}
+header .menubar .button:nth-of-type(2):hover {
+  border: 1px solid #23569c;
+  background-color: #23569c;
+}
+header .menubar .button:nth-of-type(2):hover a {
+  color: yellow;
+}
+/* ======================================================== */
+
+/* ======================== BANNER ======================== */
+.banner {
+  width: 100%;
+  height: 555px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://www.livelo.com.br/file/general/ganhe-pontos-banco-do-brasil-banner-kv1.jpg);
+}
+.banner .container {
+  height: 100%;
+}
+.form {
+  padding: 25px;
+  width: 400px;
+  height: 100%;
+  /* border: 1px solid #212343; */
+  background-color: white;
+}
+.form h2 {
+  font-weight: normal;
+  color: #999;
+  font-size: 25px;
+}
+
+.input-container {
+  margin-top: 20px;
+}
+.input-container span {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+}
+.input-container input[type="text"] {
+  margin-top: 5px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.input-container input[type="text"]:focus {
+  outline: 0;
+  border: 2px solid darkblue;
+}
+
+.form .warning {
+  font-weight: bold;
+  color: red;
+  margin-top: 10px;
+}
+
+.input-submit-container {
+  margin: 25px auto;
+  text-align: center;
+}
+.input-submit-container input[type="submit"] {
+  width: 100%;
+  background-color: #212343;
+  cursor: pointer;
+  color: yellow;
+  padding: 25px;
+  border-radius: 15px;
+  border: none;
+  transition: 0.5s;
+}
+
+.input-submit-container input[type="submit"]:focus {
+  outline: 0;
+}
+.input-submit-container input[type="submit"]:hover {
+  background-color: yellow;
+  color: #212343;
+}
+/* ======================================================= */
+
+/* ======================== ABOUT ======================== */
+.about {
+  padding: 60px 0 30px 0;
+  color: #fff;
+  background-color: #16172b;
+}
+.about h2 {
+  margin-bottom: 10px;
+}
+.arrow {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  margin-left: -20px;
+  width: 55px;
+  height: 55px;
+  background-image: url(http://www.pngpix.com/wp-content/uploads/2016/10/PNGPIX-COM-Arrow-Down-PNG-Transparent-Image.png);
+  background-size: 100% 100%;
+}
+/* ======================================================= */
+
+/* ======================== ICONS ======================== */
+.icons {
+  padding: 50px 0;
+}
+.icons h2 {
+  text-align: center;
+  color: #212343;
+}
+.icons .row {
+  padding: 50px 0;
+  /* margin-top: 20px; */
+}
+.icons .col {
+  /* float: left; */
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+.icons .col:nth-child(2n + 1) img {
+  padding: 75px 0 35px 0;
+}
+.icons .col:nth-child(2) img {
+  padding: 25px 0 15px 0;
+}
+.icons .col:hover {
+  transform: scale(1.1);
+  background-color: rgb(246, 246, 246);
+}
+.icons .col img {
+  width: 300px;
+}
+/* ========================================================= */
+
+/* ======================= FEEDBACKS ======================= */
+.feedbacks {
+  padding: 50px 0;
+}
+.feedbacks .col {
+  padding: 50px;
+  max-width: 600px;
+  text-align: left;
+}
+.feedbacks .col:nth-child(1) p {
+  padding: 10px 0;
+}
+.feedbacks .col .feedback {
+  text-align: left;
+  padding: 25px;
+  margin: 25px 0;
+  transition: 0.5s;
+  box-shadow: -6px 6px 18px -6px rgb(0 0 0 / 15%);
+}
+.feedbacks .col .feedback:hover {
+  transform: scale(1.1);
+}
+.feedbacks .col .feedback .name {
+  font-weight: bolder;
+  padding: 10px 0;
+}
+/* ======================================================== */
+
+/* ======================== FOOTER ======================== */
+footer {
+  /* padding: 25px; */
+  text-align: center;
+  color: #fff;
+}
+
+/* footer top */
+footer .footer-top {
+  width: 100%;
+  background-color: yellow;
+  font-weight: bolder;
+  color: #212343;
+  padding: 25px 0;
+}
+
+/* footer content */
+footer .footer-content {
+  background-color: #212343;
+  padding: 15px 25px;
+}
+footer .footer-content .row .col:first-child {
+  max-width: 500px;
+  width: 100%;
+  padding: 25px 50px;
+}
+footer .footer-content .row .col:nth-child(2) {
+  max-width: 500px;
+  width: 100%;
+  padding: 25px 50px;
+}
+footer .footer-content .row .col:nth-child(3) {
+  max-width: 500px;
+  width: 100%;
+  padding: 25px 50px;
+}
+footer .footer-content .row .col:nth-child(2) .row .col {
+  max-width: 200px;
+}
+footer .footer-content .row .col:nth-child(2) ul li {
+  text-align: left;
+  list-style: square;
+  padding: 5px 0;
+}
+
+/* footer bottom */
+footer .footer-bottom {
+  background-color: #16172b;
+  padding: 25px 0;
+}
+/* ======================================================= */
+
+/* =================================================  FIM DA ESTILIZAÇÃO DA LANDING PAGE*/
