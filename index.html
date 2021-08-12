@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone meu cartão BB</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -16,7 +17,13 @@
                 <img src="https://logodownload.org/wp-content/uploads/2014/05/banco-do-brasil-logo-4.png" alt="">
             </div><!-- logo -->
 
-            <div class="menubar">
+            <div class="icon">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div><!-- icon -->
+
+            <div class="menubar" id="menubar">
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ATENDIMENTO</a></li>
@@ -28,11 +35,24 @@
                     <div class="button"><a href="">ABRA UMA CONTA</a></div>
                     <div class="button"><a href="">ACESSE SUA CONTA</a></div>
                 </div><!-- buttons -->
+
             </div><!-- menubar -->
+            
+
         </div><!-- container -->
+        
     </header><!-- header -->
 
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("menubar");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 
     <section class="banner">
         <div class="container">
@@ -102,6 +122,7 @@
                             praesentium dolore sit libero quas cumque!</p>
                     </div><!-- item-text -->
                 </div><!-- item -->
+
                 <div class="col">
                     <div><img
                             src="https://static.foregon.com/product-images/cartao-de-credito-ourocard-banco-do-brasil-visa-gold_280-175.png"
@@ -115,6 +136,7 @@
                             praesentium dolore sit libero quas cumque!</p>
                     </div><!-- item-text -->
                 </div><!-- item -->
+
                 <div class="col">
                     <div><img
                             src="https://static.foregon.com/product-images/cartao-de-credito-ourocard-banco-do-brasil-visa-gold_280-175.png"
@@ -128,6 +150,7 @@
                             praesentium dolore sit libero quas cumque!</p>
                     </div><!-- item-text -->
                 </div><!-- item -->
+
             </div><!-- row -->
         </div><!-- container -->
     </section><!-- icons -->
@@ -160,7 +183,7 @@
 
             </div><!-- row -->
         </div><!-- container -->
-    </section>
+    </section><!-- feedbacks -->
 
 
 
@@ -203,7 +226,7 @@
                 </div><!-- col -->
 
                 <div class="col">
-                    <h3>ENTRE EM CONTATO CONOSCO PARA SER ROUBADO PELO EMAIL MEROUBE@DEEPWEB.COM</h3>
+                    <h5>ENTRE EM CONTATO CONOSCO PARA SER ROUBADO PELO EMAIL MEROUBE@DEEPWEB.COM</h5>
                 </div><!-- col -->
 
             </div><!-- row -->

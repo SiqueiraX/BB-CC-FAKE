@@ -1,4 +1,3 @@
-/* ================================================ INICIO DA ESTILIZAÇÃO DA LANDING PAGE */
 * {
   padding: 0;
   margin: 0;
@@ -21,8 +20,9 @@ a {
   color: #fff;
   transition: 0.5s;
 }
+
 a:hover {
-  color: #999;
+  color: yellow;
 }
 
 ul li {
@@ -48,32 +48,50 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* header logo */
+header .logo {
+  padding: 10px 20px;
+  width: 50%;
 }
 header img {
   width: 70px;
 }
+
+/* header menu */
 header .menubar {
-  display: flex;
+  width: 100%;
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  text-align: center;
 }
 header .menubar ul {
+  flex-direction: column;
+  flex-wrap: wrap;
   display: flex;
 }
 header .menubar ul li {
   padding: 5px 20px;
   font-size: 12px;
-  /* margin: 0 5px; */
   border-radius: 5px;
-  /* background-color: red; */
 }
+
+/* header buttons */
 header .menubar .buttons {
-  display: flex;
+  padding: 5px 0;
+  display: block;
+  flex-wrap: wrap;
 }
 header .menubar .button {
   text-align: center;
   font-size: 11px;
   max-width: 150px;
-  margin: 0 5px;
+  margin: 10px auto;
   padding: 12px 10px;
   background-color: transparent;
   border-radius: 10px;
@@ -91,7 +109,6 @@ header .menubar .button:nth-of-type(1):hover {
 header .menubar .button:nth-of-type(1):hover a {
   color: #16172b;
 }
-
 header .menubar .button:nth-of-type(2) {
   border: 1px solid #fff;
   background-color: #212343;
@@ -105,6 +122,15 @@ header .menubar .button:nth-of-type(2):hover {
 }
 header .menubar .button:nth-of-type(2):hover a {
   color: yellow;
+}
+
+/* header icon */
+header .icon {
+  text-align: right;
+  width: 50%;
+  display: inline-block;
+  font-size: 50px;
+  padding: 14px 16px;
 }
 /* ======================================================== */
 
@@ -122,7 +148,8 @@ header .menubar .button:nth-of-type(2):hover a {
 }
 .form {
   padding: 25px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 100%;
   /* border: 1px solid #212343; */
   background-color: white;
@@ -132,7 +159,6 @@ header .menubar .button:nth-of-type(2):hover a {
   color: #999;
   font-size: 25px;
 }
-
 .input-container {
   margin-top: 20px;
 }
@@ -153,13 +179,11 @@ header .menubar .button:nth-of-type(2):hover a {
   outline: 0;
   border: 2px solid darkblue;
 }
-
 .form .warning {
   font-weight: bold;
   color: red;
   margin-top: 10px;
 }
-
 .input-submit-container {
   margin: 25px auto;
   text-align: center;
@@ -174,7 +198,6 @@ header .menubar .button:nth-of-type(2):hover a {
   border: none;
   transition: 0.5s;
 }
-
 .input-submit-container input[type="submit"]:focus {
   outline: 0;
 }
@@ -186,7 +209,7 @@ header .menubar .button:nth-of-type(2):hover a {
 
 /* ======================== ABOUT ======================== */
 .about {
-  padding: 60px 0 30px 0;
+  padding: 60px 30px;
   color: #fff;
   background-color: #16172b;
 }
@@ -200,7 +223,7 @@ header .menubar .button:nth-of-type(2):hover a {
   margin-left: -20px;
   width: 55px;
   height: 55px;
-  background-image: url(http://www.pngpix.com/wp-content/uploads/2016/10/PNGPIX-COM-Arrow-Down-PNG-Transparent-Image.png);
+  background-image: url("https://www.pngrepo.com/download/199668/download-down-arrow.png");
   background-size: 100% 100%;
 }
 /* ======================================================= */
@@ -215,10 +238,8 @@ header .menubar .button:nth-of-type(2):hover a {
 }
 .icons .row {
   padding: 50px 0;
-  /* margin-top: 20px; */
 }
 .icons .col {
-  /* float: left; */
   max-width: 400px;
   width: 100%;
   padding: 30px;
@@ -236,7 +257,8 @@ header .menubar .button:nth-of-type(2):hover a {
   background-color: rgb(246, 246, 246);
 }
 .icons .col img {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
 /* ========================================================= */
 
@@ -292,24 +314,27 @@ footer .footer-content {
 footer .footer-content .row .col:first-child {
   max-width: 500px;
   width: 100%;
-  padding: 25px 50px;
+  padding: 25px 0;
+}
+footer .footer-content .row .col:first-child h2 {
+  color: yellow;
 }
 footer .footer-content .row .col:nth-child(2) {
   max-width: 500px;
   width: 100%;
-  padding: 25px 50px;
+  padding: 25px 0;
 }
 footer .footer-content .row .col:nth-child(3) {
   max-width: 500px;
   width: 100%;
-  padding: 25px 50px;
+  padding: 25px;
 }
 footer .footer-content .row .col:nth-child(2) .row .col {
   max-width: 200px;
 }
 footer .footer-content .row .col:nth-child(2) ul li {
-  text-align: left;
-  list-style: square;
+  /* text-align: justify; */
+  /* list-style: square; */
   padding: 5px 0;
 }
 
@@ -320,4 +345,28 @@ footer .footer-bottom {
 }
 /* ======================================================= */
 
+@media screen and (min-width: 992px) {
+  header .logo {
+    padding: 0;
+    width: initial;
+  }
+  header .menubar {
+    width: initial;
+    display: flex !important;
+    flex-direction: row;
+  }
+  header .menubar ul {
+    flex-direction: row;
+  }
+  header .menubar .buttons {
+    display: flex;
+  }
+  header .menubar .button {
+    margin: 0 5px;
+  }
+  header .icon {
+    width: initial;
+    display: none;
+  }
+}
 /* =================================================  FIM DA ESTILIZAÇÃO DA LANDING PAGE*/
